@@ -2,11 +2,11 @@
   "name": "math-api",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "src/app.js",
   "type": "module",
   "scripts": {
     "start": "node src/app.js",
-    "start:dev": "nodemon ./src/app.js",
+    "start:dev": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -29,33 +29,6 @@
   "devDependencies": {
     "eslint": "^8.56.0",
     "nodemon": "^3.0.3"
-  },
-  "vercel": {
-    "version": 2,
-    "builds": [
-      {
-        "src": "app.js",
-        "use": "@vercel/node"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/api/auth/(.*)",
-        "dest": "auth.router.js"
-      },
-      {
-        "src": "/api/user/(.*)",
-        "dest": "users.router.js"
-      },
-      {
-        "src": "/api/contact/(.*)",
-        "dest": "contact-us.router.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/"
-      }
-    ]
   }
 }
 
