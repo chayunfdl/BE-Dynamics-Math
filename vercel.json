@@ -4,9 +4,9 @@
         { "src": "build/app.js", "use": "@vercel/node" }
     ],
     "routes": [
-        { "src": "/api/auth/(.*)", "dest": "build/routes/auth.router.js" },
-        { "src": "/api/user/(.*)", "dest": "build/routes/users.router.js" },
-        { "src": "/api/contact/(.*)", "dest": "build/routes/contact-us.router.js" },
-        { "src": "/(.*)", "dest": "build/app.js" }
+        { "src": "/api/auth/(.*)", "dest": "routes/auth.router.js" },
+        { "src": "/api/user/(.*)", "dest": "routes/users.router.js" },
+        { "src": "/api/contact/(.*)", "dest": "routes/contact-us.router.js" },
+        { "src": "/(.*)", "dest": "app.js" }
     ]
 }
