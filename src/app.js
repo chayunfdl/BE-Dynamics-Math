@@ -26,9 +26,9 @@ app.use(cors({
 
 app.use(`${globalApiPrefix}/`,
 	express.Router()
-		.use("/auth", AuthRouter)
-		.use("/user", UserRouter)
-		.use("/contact", ContactRouter)
+		.use('/api/auth', AuthRouter)
+		.use('/api/user', UserRouter)
+		.use('/api/contact', ContactRouter)
 );
 
 
