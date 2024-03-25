@@ -13,7 +13,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@vercel/postgres": "^0.7.2",
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
@@ -23,12 +22,10 @@
     "morgan": "^1.10.0",
     "mysql2": "^3.9.1",
     "nanoid": "^5.0.5",
-    "sequelize": "^6.36.0",
-    "vercel": "^33.6.1"
+    "sequelize": "^6.36.0"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
     "nodemon": "^3.0.3"
   }
 }
-
